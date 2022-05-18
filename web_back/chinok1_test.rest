@@ -1,0 +1,43 @@
+GET http://localhost:8000/
+
+// 14/D 2022.05.12
+###
+GET http://localhost:8000/artists
+
+###
+GET http://localhost:8000/genres
+
+###
+POST http://localhost:8000/genres
+Content-Type: application/json
+
+{
+    "name":"sabaton"
+}
+
+###
+DELETE http://localhost:8000/genres/35
+
+###
+GET http://localhost:8000/artist-albums/AC%2FDC
+
+
+// 14/GE 2022.05.14
+
+###
+GET http://localhost:8000/media
+
+###
+POST http://localhost:8000/media
+Content-Type: application/json
+
+{
+    "name":"korpiklaani file"
+}
+
+###
+DELETE http://localhost:8000/media/7
+
+
+###
+GET http://localhost:8000/artist

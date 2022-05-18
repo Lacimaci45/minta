@@ -1,0 +1,48 @@
+//Adatbázis REST Client Backend tesztek a létrehozott végpontok alapján
+
+
+GET http://localhost:8000/
+
+
+###
+GET http://localhost:8000/becenevek
+
+
+###
+GET http://localhost:8000/munkavallalok
+
+
+###
+GET http://localhost:8000/dolgozok
+
+
+###
+POST http://localhost:8000/ujbecenev
+Content-Type: application/json
+
+{
+    "becenev":"Jana"
+}
+
+
+###
+PATCH http://localhost:8000/modositbecenev
+Content-Type: application/json
+
+{
+    "id":1,
+    "becenev":"Laca"
+}
+
+
+###
+DELETE http://localhost:8000/torolbecenev
+Content-Type: application/json
+
+{
+    "id":61
+}
+
+
+###
+GET http://localhost:8000/elerhetoseg

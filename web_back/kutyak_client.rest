@@ -1,0 +1,38 @@
+GET http://localhost:8000/
+
+###
+
+GET http://localhost:8000/kutyanevek
+
+###
+GET http://localhost:8000/kutyafajtak
+
+###
+GET http://localhost:8000/kutyak
+
+###
+POST http://localhost:8000/ujkutyanev
+Content-Type: application/json
+
+{
+    "kutyanev":"Bubuka"
+}
+
+
+###
+PATCH http://localhost:8000/modositkutyanev
+Content-Type: application/json
+
+{
+    "id":296,
+    "kutyanev":"Bubi"
+}
+
+
+###
+DELETE http://localhost:8000/torolkutyanev
+Content-Type: application/json
+
+{
+    "id":296
+}
