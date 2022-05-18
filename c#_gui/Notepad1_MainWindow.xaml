@@ -1,0 +1,28 @@
+﻿<Window x:Class="_14GE_2022_04_11_Notepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_14GE_2022_04_11_Notepad"
+        mc:Ignorable="d"
+        Title="Notepad" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Menu VerticalAlignment="Center">
+            <MenuItem Header="Fájl" FontSize="20">
+                <MenuItem Header="Megnyitás" Click="Megnyitas_Click"/>
+                <MenuItem Header="Mentés" Click="Mentes_Click"/>
+                <MenuItem Header="Mentés másként" Click="MentesMaskent_Click"/>
+                <MenuItem Header="Kilépés" Click="Kilepes_Click"/>
+            </MenuItem>
+            <MenuItem Header="Szerkesztés" FontSize="20"></MenuItem>
+            <MenuItem Header="Segítség" FontSize="20">
+                <MenuItem Header="Névjegy" Click="Nevjegy_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="textboxSzoveg" FontSize="20" AcceptsReturn="True" Grid.Row="1" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>

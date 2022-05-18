@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfNotepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNotepad"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Menu x:Name="mainMenu">
+                <MenuItem Header="Fájl" FontSize="18"  >
+                    <MenuItem x:Name="megnyitas" Header="Megnyitás" FontSize="18" Click="megnyitas_Click" />
+                    <MenuItem Header="Mentés" FontSize="18"  Click="Mentes_Click"/>
+                    <Separator />
+                    <MenuItem x:Name="kilepes" Header="Kilépés" FontSize="18" Click="kilepes_Click" />
+                </MenuItem>
+                    <MenuItem Header="Szerkesztés" FontSize="18"></MenuItem>
+                    <MenuItem Header="Súgó" FontSize="18">
+                        <MenuItem Header="Névjegy" FontSize="18" Click="About_Click"></MenuItem>
+                    </MenuItem>
+
+                </Menu>
+            
+            <TextBox x:Name="szoveg" FontSize="20" TextWrapping="Wrap"  ScrollViewer.CanContentScroll="True" AcceptsReturn="True"  />
+            
+
+        </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
