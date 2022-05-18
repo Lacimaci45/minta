@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Tailwind + DaisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Responsive Band Page</title>
+</head>
+<body>
+ 
+  <div class="grid sm:grid-cols-1 bg-lime-200 md:grid-cols-2 gap-4 p-4 justisy-items-stretch">
+    <div class="bg-lime-500 rounded-full  sm:justify-self-center md:justify-self-end"><h1 class="text-3xl">Zenei adatbázis</h1></div>
+    <div class="sm:justify-self-center md:justify-self-start"><p>A legnagyobb elérhető zenei adatbázis</p></div>
+  </div>
+
+
+    <div class="navbar bg-lime-500">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">Zenei portál</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal p-0">
+            <li><a>Előadok</a></li>
+            <li><a>Albumok</a></li>
+          </ul>
+        </div>
+      </div>
+
+<section class="p-4 bg-no-repeat bg-fixed bg-center bg-lime-200 h-screen" style="background-image:url(bg1.jpg);">
+    <div class="grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 justisy-items-stretch">
+
+    <div class="grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 p-4 justisy-items-stretch m-5 justify-self-center">
+        <div class="card w-96 bg-lime-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Sabaton zenekar</h2>
+              <p>Armour album</p>
+              
+            </div>
+          </div>
+    </div>
+
+    <div class="grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 justisy-items-stretch m-5 justify-self-center">
+        <div class="card w-96 bg-lime-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Echterion zenekar</h2>
+              <p>Art of War album</p>
+              
+            </div>
+          </div>
+    </div>
+
+    <div class="grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 justisy-items-stretch m-5 justify-self-center">
+        <div class="card w-96 bg-lime-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Korpilaani zenekar</h2>
+              <p>Legacy album</p>
+              
+            </div>
+          </div>
+    </div>
+    </div>
+</section>
+    
+    
+</body>
+</html>
